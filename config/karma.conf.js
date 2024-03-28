@@ -21,12 +21,13 @@ module.exports = function(config) {
       'karma-junit-reporter',
       'karma-chrome-launcher',
       'karma-firefox-launcher',
-      'karma-jasmine'
+      'karma-jasmine',
+      'karma-jasmine-html-reporter'
     ],
 
     junitReporter: {
-      outputFile: 'test_out/unit.xml',
-      suite: 'unit'
+       outputDir: 'test_out',
+      outputFile: 'results.xml'
     },
 
     customLaunchers: {
